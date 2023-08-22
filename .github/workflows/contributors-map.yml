@@ -1,8 +1,13 @@
-on: push
+name: Create Contributor Map
 
+on:
+  push:
+  
+    
 jobs:
-  - name: Contributor Map
-    uses: tunaitis/contributor-map@v1
-    with:
-      repository: anchore/syft
-      output: data/syft-map.svg
+  build-and-push-image:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Contributor Map
+        uses: tunaitis/contributor-map@v1 
