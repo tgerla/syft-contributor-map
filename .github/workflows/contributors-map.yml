@@ -1,5 +1,8 @@
-- name: Contributor Map
-  uses: tunaitis/contributor-map@v1
-  with:
-    repository: anchore/syft
-    output: data/syft-map.svg
+on: push
+
+jobs:
+  - name: Contributor Map
+    uses: tunaitis/contributor-map@v1
+    with:
+      repository: anchore/syft
+      output: data/syft-map.svg
