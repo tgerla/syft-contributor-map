@@ -1,0 +1,1 @@
+# syft-contributor-map
